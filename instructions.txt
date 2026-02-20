@@ -2,7 +2,7 @@ Requirements:
 - Use python as a programming language
 - Use streamlit application
 - Use ollama library
-- You MUST gemma3:4b model
+- You MUST gemma3:1b model
 - You MUST use docs folder for documentation 
 - you must generate readme.md file
 - you must generate requirements.txt
@@ -12,3 +12,30 @@ Objective:
 Generate a streamlit web application that uses Ollama (local LLM) to generate a professional email reply based on:
 1) An incoming email
 2) A desired goal for the reply
+
+FUNCTIONAL REQUIREMENTS
+
+1) The Streamlit UI must contain:
+
+- Text area: "Email you received"
+- Text area: "What do you want to achieve?"
+- Text input: "Your name (optional)"
+- Text input: "your email"
+- Sidebar settings:
+    - Ollama URL (default: http://127.0.0.1:11434)
+    - Model name (default: gemma3:4b)
+    - Temperature slider
+    - Max tokens slider
+- Generate button
+- Output area showing generated reply
+- Download button (.txt)
+
+- Selectbox: "Tone" with at least these options:
+  - Formal
+  - Friendly
+  - Short
+  - Customer Support
+  - Follow-up
+
+  TONE RULES
+  Implement tone options mentioned in FUNCTIONAL REQUIREMENTS in app.py. Each selection must influence reply output meaningfully (style, grammar, length of the email, etc.)
