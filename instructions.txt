@@ -1,0 +1,14 @@
+Requirements: 
+- Use python as a programming language
+- Use streamlit application
+- Use ollama library
+- You MUST gemma3:4b model
+- You MUST use docs folder for documentation 
+- you must generate readme.md file
+- you must generate requirements.txt
+
+
+Objective:
+Generate a streamlit web application that uses Ollama (local LLM) to generate a professional email reply based on:
+1) An incoming email
+2) A desired goal for the reply
